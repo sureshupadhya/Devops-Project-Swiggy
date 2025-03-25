@@ -1,0 +1,23 @@
+pipeline{
+    agent { label 'Swiggy-Linux-Agent-01' } 
+
+    stages {
+        stage('clean workspace'){
+            steps{
+                cleanWs()
+            }
+        }
+        stage('Checkout from Git'){
+            steps{
+                git 'https://github.com/KastroVKiran/DevOps-Project-Swiggy.git'
+            }
+        }
+
+
+ 
+
+
+
+
+    }
+}
