@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent { label 'Swiggy-Linux-Agent-01' } 
     tools{
         jdk 'jdk17'
         nodejs 'node23'
